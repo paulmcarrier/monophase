@@ -22,11 +22,15 @@
     <div class="footer-column">
       <ul class="social-icons">
         {% for social in site.data.social %}
-          <li class="social-icon-item">
-            <a class="social-icon" href="{{ social.url }}" target="_blank">
-              <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
-            </a>
-          </li>
+          {% assign social_title = social.title | default: '' | downcase %}
+          {% assign social_icon = social.icon | default: '' | downcase %}
+          {% unless social_title == 'github' or social_icon contains 'github' %}
+            <li class="social-icon-item">
+              <a class="social-icon" href="{{ social.url }}" target="_blank" rel="noopener">
+                <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
+              </a>
+            </li>
+          {% endunless %}
         {% endfor %}
       </ul>
     </div>

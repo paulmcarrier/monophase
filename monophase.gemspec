@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "monophase"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Song-Zi Vong"]
   spec.email         = ["zivmsg@gmail.com"]
 

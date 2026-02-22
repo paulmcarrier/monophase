@@ -136,6 +136,8 @@ The navigation bar of Monophase is configurable. You just need to specify titles
 
 Monophase allows you to show social links on the website. All you need to do is creating a file `_data/social.yml`, for example,
 
+If a GitHub entry is present, it is shown in the top header. Other social links are shown in the footer.
+
 ```yml
 - title: Email
   url: mailto:zivmsg@gmail.com

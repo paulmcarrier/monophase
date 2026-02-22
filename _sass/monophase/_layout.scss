@@ -23,6 +23,13 @@
   margin-bottom: var(--spacer-3);
 }
 
+.masthead-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--spacer);
+}
+
 .masthead-title {
   font-size: 1.3em;
   font-weight: bold;
@@ -37,7 +44,15 @@
   }
 }
 
-.nav-list {  
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35em;
+  color: inherit;
+  white-space: nowrap;
+}
+
+.nav-list {
   padding: 0;
   margin: var(--spacer) 0 0 0;
   border-top: 1px solid var(--border-color);
